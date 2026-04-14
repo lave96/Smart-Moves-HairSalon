@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Montserrat", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-salon-pink: #FDF2F2;
+  --color-salon-rose: #F9A8D4;
+  --color-salon-gold: #D4AF37;
+  --color-salon-gold-light: #F4E0A1;
+  --color-salon-ink: #1A1A1A;
+  --color-sage-bg: #c6cfcd;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-salon-ink font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat tracking-tight;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F4E0A1 50%, #D4AF37 100%);
+}
+
+.pink-gradient {
+  background: linear-gradient(135deg, #FDF2F2 0%, #F9A8D4 100%);
+}
+
+.text-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #F4E0A1 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
